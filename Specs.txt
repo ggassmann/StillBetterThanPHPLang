@@ -1,0 +1,47 @@
+﻿Main Symbols:
+    >, v, <, and ^
+		Arrow characters, sets the direction to read code.
+
+	\, /
+		Mirror characters, reflects the direction code is read in.
+
+	;
+		End Program (Safely)
+
+	#
+		Set direction randomly. Can reverse direction. ~25% chance for each direction to be set.
+
+	,
+		Skip, don't print anything. Used as a spacer.
+
+	*
+		Force print next char, will ignore the next symbol and print it.
+
+	"
+		Newline
+
+	[, ]
+		Start and end expression
+
+	Any other char will be printed out
+
+Expression Symbols:
+	Each expression must have an operation type at the start, a variable name, and an operation.
+	Some expressions also take values, after the operation.
+
+	Integer Operations ($) 
+		=
+			[Takes one value]
+			Sets the variable to the value
+
+		>, <, :
+			[Takes one value]
+			Checks if the variable is greater than, lesser than, or equal to (correspondingly)
+			If false, skip one space after the expression and continue computing.
+
+		@
+			Prints out the value of the variable
+
+		?
+			Read an integer from the console and store it in the variable.
+			If the user enters a non-integer, skips one space after the expression and continue computing.
